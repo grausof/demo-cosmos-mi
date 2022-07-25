@@ -1,0 +1,33 @@
+{
+  "name": "demomi",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet...\"",
+    "format": "prettier --write .",
+    "lint": "eslint src/**",
+    "lint:fix": "eslint --fix src/**"
+  },
+  "dependencies": {
+    "@azure/cosmos": "^3.16.3",
+    "@azure/identity": "^2.1.0",
+    "@pagopa/eslint-config": "^3.0.0",
+    "@pagopa/handler-kit": "^0.2.3",
+    "@pagopa/io-functions-commons": "^25.5.1",
+    "@pagopa/ts-commons": "^10.8.0",
+    "eslint": "^8.20.0",
+    "fp-ts": "^2.12.1",
+    "io-ts": "^2.2.16",
+    "prettier": "^2.7.1",
+    "ulid": "^2.3.0"
+  },
+  "devDependencies": {
+    "@azure/functions": "^3.0.0",
+    "@types/node": "16.x",
+    "typescript": "^4.0.0"
+  }
+}
